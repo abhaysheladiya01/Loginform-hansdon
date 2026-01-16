@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-letter {
+    color: red;
+    font-style: italic;
+}
+
+h1.style-heading {
+    color: rgb(36, 33, 33);
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    margin-bottom: 20px;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.login-container h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 12px 12px 42px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: white;
+}
+
+.form-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    background: powderblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+footer {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    button {
+        width: 70%;
+        padding: 14px;
+    }
+
+    .login-form {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .login-container {
+        max-width: 380px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        max-width: 400px;
+    }
+}
