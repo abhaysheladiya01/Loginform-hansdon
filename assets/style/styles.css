@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
-    background-image: url("background.jpg");
+    background-image: url("../images/background.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -72,15 +72,15 @@ h1.style-heading {
     width: 100%;
     padding: 12px 12px 12px 42px;
     border-radius: 6px;
-    border: none;
+    border: 1p;
     outline: none;
     font-size: 1rem;
     background: rgba(255,255,255,0.2);
-    color: white;
+    color: black;
 }
 
 .form-group input::placeholder {
-    color: white;
+    color: black;
 }
 
 .form-group .icon {
@@ -109,7 +109,7 @@ button:hover {
 }
 
 footer {
-    color: white;
+    color: black;
     font-size: 1rem;
     text-align: center;
     margin-top: 20px;
