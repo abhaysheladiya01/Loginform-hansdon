@@ -43,8 +43,7 @@ h1.style-heading {
   color: rgb(36, 33, 33);
   text-align: center;
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 300;
 }
@@ -117,13 +116,13 @@ h1.style-heading {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 50%;
+  width: 25%;
   padding: 12px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #d8e2ed;
   color: white;
-  border: none;
-  border-radius: 6px;
+  border: 10px solid wheat;
+  border-radius: 10px;
   cursor: pointer;
   margin: 20px auto 0;
 }
@@ -134,7 +133,7 @@ h1.style-heading {
 }
 
 button:hover {
-  background: #357abd;
+  background: #93989e;
 }
 
 footer {
